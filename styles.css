@@ -1,0 +1,500 @@
+/* Navigation Bar Styles */
+nav {
+    background-color: #38044b;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #d0add7;
+    border-radius: 5px;
+    color: #050505;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home Section Styles */
+#home {
+    text-align: center;
+    padding: 150px 10px; /* Adjusted padding to account for fixed nav */
+    background: url(nhss\ school\ bg.png) no-repeat center center; /* Add your school image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-attachment: fixed; /* Creates a parallax effect */
+    min-height: 500px; /* Ensure there's enough height for the section */
+    position: relative; /* Positioning context for absolute elements */
+}
+
+
+.school-logo {
+    width: 250px;
+    height: auto;
+}
+
+h1 {
+    color: #f1f514;
+    font-size: 4.0em;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0;
+    color: #030303;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: 10px;
+    font-style: oblique;
+}
+/* Styling for header card in the home section */
+.header-card {
+    background-color: rgba(71, 71, 71, 0.7); /* Light background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px;
+    margin: 0 auto; /* Center the card */
+    text-align: center;
+}
+
+.header-card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.header-card h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #240046;
+}
+
+.header-card p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fcf300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Announcements Section */
+#announcements {
+    margin-top: 40px;
+}
+
+#announcements h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fcf300;
+}
+
+.announcement-card {
+    background-color: #e5ec5e;
+    border: 1px solid #f3f0f3;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 8px #0c4fde1a;
+}
+
+.announcement-card h3 { 
+    margin: 0;
+    font-size: 1.7em;
+    color: #360550;
+}
+
+.announcement-card p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #070808;
+    margin-top: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 10px 20px;
+    margin-top: 0;
+}
+
+#about{ 
+    min-height: 700px;
+    background-color: #e5ec5e;
+    color: #232105;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+#academics, #contact {
+    min-height: 700px;
+    background-color: #e5ec5e;
+    color: #232105;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    
+}
+#gallery{
+    min-height: 700px;
+    background-color: #e5ec5e;
+    color: #232105;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 1em;
+}
+}
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #450767;
+}
+
+/* Contact Us Section */
+.contact-details {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.contact-form {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e2b6f3;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #d97de4;
+    color: white;
+    border: none;
+    color: #030303;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#leadership {
+    padding: 50px 20px;
+    background-color: #e5ec5e;
+    text-align: center;
+}
+
+.leadership-container {
+    display: flex;
+    flex-wrap: nowrap; /* Allows items to wrap in smaller screens */
+    justify-content: space-around; /* Space evenly */
+    margin-top: 20px;
+}
+
+.leadership-member {
+    width: 38%; /* Adjust to fit the desired number of columns */
+    margin: 10px; /* Space between items */
+    padding: 20px;
+    background-color: #cfadec;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+.member-image {
+    max-width: 100%;
+    height: auto; /* Adjust height as necessary */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space below the image */
+}
+
+h3 {
+    color: #4f1010;
+    font-size: 1.7em; /* Adjust the size as needed */
+    margin-bottom: 10px;
+}
+
+/* Styling for Announcements section background */
+#announcements {
+    background-color: #e5ec5e; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px; /* Optional: Rounded corners for the section */
+}
+
+#announcements h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #450767; /* Optional: Adjust color if needed */
+}
+
+.announcement-card {
+    background-color: #eabcdd; /* White background for individual cards */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.announcement-card h3 {
+    margin-top: 0;
+    color: #09085d;
+}
+
+.announcement-card p {
+    color: #0f0e0e;
+}
+#resources {
+    padding: 20px;
+    background-color: #d4aae2;
+}
+
+.resource-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #efed7c;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #f7f6f6;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Create a responsive grid */
+    gap: 20px; /* Space between items */
+    margin: 20px; /* Container margin */
+}
+
+.gallery-item {
+    text-align: center; /* Centers the text below the image */
+}
+
+.gallery-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 150px; /* Set a maximum width for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+#countdown {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e5ec5e; /* Background color */
+    color: #450767; /* Text color */
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #fff; /* Card background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-item span {
+    font-size: 2.3em; /* Large font size for countdown numbers */
+    font-weight: bold;
+    color: #09085d;
+}
+
+.countdown-label {
+    font-size: 1em; /* Smaller font size for labels */
+}
+#infographics {
+    padding: 50px 20px;
+    background-color: #e5ec5e;
+    text-align: center;
+}
+
+.infographic-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in one line */
+    justify-content: space-between; /* Space evenly */
+    margin-top: 20px;
+}
+
+.infographic-item {
+    width: 23%; /* Adjusted width to allow for four items */
+    margin: 10px; /* Remove margin to fit in the line */
+    padding: 20px;
+    background-color: #cfadec;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.infographic-image {
+    max-width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+h2{
+    color: #290537;
+    font-size: 2.2em;
+}
+h3 {
+    color: #51065f;
+    font-size: 1.7em;
+    
+}
+/* Popup container */
+.newsletter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+
+/* Popup content */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Close button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px; /* Close button font size */
+    cursor: pointer;
+    background: #530575;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    transition: background 0.1s ease;
+}
+
+.close-popup:hover {
+    background: #ca8fc6;
+    color: #050505;
+}
+
+/* Input field and button */
+input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: content-box;
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Button styling */
+button {
+    background-color: #500346;
+    color: rgb(240, 240, 238);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 14px; /* Reduced font size */
+}
+
+button:hover {
+    background-color: #b28aba;
+    color: #030303;
+}
+
+/* Title styling */
+.newsletter-title {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 16px; /* Reduced font size */
+    color: #490449;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.center-text {
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Optional: Add some margin for spacing */
+    font-size: 25px; /* Optional: Adjust font size if needed */
+    color: #0b0b0b; /* Optional: Change text color */
+}
+
+
+
+
+
+
+
+
+
